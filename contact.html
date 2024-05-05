@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mãi vui</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<button type="button" onclick="neuthi(8)">bấm vào</button>
+<button type="button" onclick="cas(9)">điểm</button>
+<button type="button" onclick="vonglapfor()">for</button>
+<button type="button" onclick="dowhile(10)">while</button>
+<input type="text" id="doimau" onfocus="changecolor(1)" onblur="changecolor(31)">
+ <select name="" id="chon" onchange="thaydoichon()">
+    <option value="">số 1</option>
+    <option value="2">số 2</option>
+    <option value="3">số 3</option>
+    <option value="4">số 4</option>
+    
+</select>
+    <p id="xuat"></p>        
+    <button type="button" id="nut" onmouseover="changecolorbutton(1)" onmouseout="changecolorbutton(2)"> onMouse </button>
+    <p>thẻ p11</p>
+    <button type="button" onclick="tagname()">thep</button><br>
+    <input type="text" id="soa"><br>
+
+    <input type="text" id="sob"><br>
+    <input type="text" id="kq"><br>
+    <button type="button" onclick="return tinhtong()">kiểm tra</button><br>
+    <input type="text" id="sodong"><br>
+    <input type="text" id="socot"><br>
+    <button type="button" onclick="tabledong()">tạo table động</button>
+    <div id="container"></div>
+    <select>
+        <script>
+            for(i=1;i<=12;i++){
+                document.writeln("<option value"+i+">tháng " +i+ "</option>")
+            }
+        </script>
+        </select>
+    <button type="button" onclick="nhaplieu()" >nhập vào</button>
+    <form action="abc.ccc" name="form1" method="get">
+        <input type="text" name="abcc">
+        <p id="yeucaunhap"></p>
+        <input type="text" id="kitu" name="kitu" placeholder="kiểm tra ký tự">
+        <p id="kiemtrakitunhaplieu"></p>
+        <button type="button" onclick="kiem(document.getElementById('kitu'))">kiểm tra</button>
+        <input type="submit" onclick="return kiemtranhap()" value="đăng nhập">
+    </form>
+    	<!-- Jquery -->
+	<p>XIN chào các bạn...</p>
+	<p>xin chào</p>
+    <div id="div1">abc</div>
+	<button id="btn1">click me</button>
+    <button id="btn2">click me too</button>
+</body>
+</html> 
