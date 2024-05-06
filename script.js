@@ -222,3 +222,23 @@ $(document).ready(function(){
         }).sdiletoggle()
     })
 })
+// DOM jquery--lấy giá trị thuộc tính: text, html, val, attr
+$(document).ready(function(){
+    $("#click1").click(function(){
+        alert("hàm text:" +$("#giatritext1").text())
+    })
+//thay thế nội dung hàm cũ: text, html, val, attr
+    $("#click2").click(function(){
+        $("#giatritext1").text("Huỳnh đang siêng r")
+    })
+//thao tác css trong jquery addClass, Removeclass, toggleclass  
+    $("#click3").click(function(){
+        $("p, a").addClass("themclass")
+    })
+    //css từ thẻ con=> cha
+    $("click4").click(function(){
+        ("li").parents("ul").css({"color":"red","font-size":"16px",})
+    })
+})
+
+
